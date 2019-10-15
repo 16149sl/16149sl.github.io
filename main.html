@@ -1,0 +1,52 @@
+<!doctype html>
+<!-- Specifying the language -->
+ <html lang="en">
+
+<head>
+  <title>List</title>
+  <meta charset="utf-8"> 
+  <!-- Information about the webpage -->
+  <meta name="keywords" content="Main list creating page">
+  <meta name="description" content="Create lists, top bar, side bar">
+  <!-- Gives browsers instructions on dimensions and scaling of webpages -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS - Bootsrap 4 external library-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Link to CSS stylesheet -->
+  <link rel="stylesheet" href="main_styles.css">
+  <!-- Linking for fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Acme|Gudea|Josefin+Sans|Neucha|Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<!-- Where all of the content is -->
+<body>
+
+  <!-- Top bar information -->
+  <div id="topbar">
+    <p>What will you accomplish today?</p>
+  </div>
+
+  <!-- Side bar information -->
+  <div id="sidebar">
+    <div id="welcome">
+      <a href="index.html"><img id="logo" src="images/home/logo.png" alt="Do It Write Logo" title="Do It Write Logo"></a>
+      <p id="welcometext">Welcome!</p>
+    </div>
+    <p><a href="index.html">Logout</a></p>
+  </div>
+
+  <!-- Div class for the list -->
+  <div id="list">
+    <div id="root"></div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

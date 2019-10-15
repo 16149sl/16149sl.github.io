@@ -1,0 +1,244 @@
+/*Styling the nav bar*/
+.navbar {
+	margin-top: 40px;
+	background-color: #5E7138;
+	font-size: 20pt;
+	position: sticky;
+	top: 0;
+}
+
+/*Making the nav bar links go the width of the nav bar*/
+.navbar a {
+	width: 20%;
+	text-decoration: none;
+	color: white;
+}
+
+/*Making the nav bar links black when hovered over*/
+.navbar a:hover {
+	color: black;
+}
+
+/*Setting the dimensions of the logo*/
+#logo {
+	height: 100%, auto; /*Making the height of the images stay at its maximum, it changes when the screen does*/
+	max-width: 100%; /*Width of the images chnages in accordance to the height as the screen size changes*/
+}
+
+/*Styling the blurb*/
+#blurb {
+	width: 55%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 20px;
+	font-size: 18pt;
+	color: black;
+	font-family: 'Gudea', sans-serif;
+}
+
+/*Making the blurb headings larger*/
+.largeheadings{
+	font-size: 32pt;
+}
+
+/*Styling the login and signup buttons*/
+button {
+  background-color: #7C9F38;
+  font-size: 14pt;
+  color: white;
+  padding: 20px 40px;
+  margin: 20px 0;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  border: 5px solid white;
+}
+
+/*Making the buttons wider*/
+.popupbtn {
+	width: 30%;
+}
+
+/*Full-width input boxes */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/*Set a style for the buttons on the pop ups*/
+.modal button {
+  background-color: #7C9F38;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/*Making the buttons less opaque when hovered over*/
+.modal button:hover {
+  opacity: 0.8;
+}
+
+/*Extra styles for the cancel button*/
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/*Position the close button*/
+.container1 {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+/*Adding padding to the main container with the pop up content*/
+.container2 {
+  padding: 16px;
+}
+
+/*ALigning the close - x - button*/
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/*The Modal (main content background)*/
+.modal {
+  display: none; /*Hidden by default*/
+  position: fixed; /*Stays in place*/
+  z-index: 1; /*Sits on top - layering*/
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /*Enable scroll if needed*/
+  background-color: rgb(0,0,0); /*Fallback color in case the one below doesn't work*/
+  background-color: rgba(0,0,0,0.4); /*Black with opacity*/
+  padding-top: 60px;
+}
+
+/*Styling the actual Modal Content/Box*/
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /*5% from the top, 15% from the bottom and centered*/
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/*The close button (x)*/
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/*Making the close button (x) change colour when hovered over*/
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+#notes {
+  float: right; 
+  max-width: 100%; /*Width of the image changes in accordance to the height as the screen size changes*/
+  margin-right: 80px;
+  margin-left: 40px;
+}
+
+/*Change styles for span on extra small screens*/
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+
+/*Styling the heading*/
+h2 {
+	color: #7C9F38;
+	font-family: 'Gudea', sans-serif;
+	margin-top: 50px;
+	margin-left: 80px;
+}
+
+/*Moving the about us page text*/
+#about {
+	margin-left: 80px;
+	margin-top: 30px;
+	margin-right: 80px;
+	margin-bottom: 50px;
+
+}
+
+/*Setting the dimensions of the footer logo*/
+#footerlogo {
+  height: 100%, auto; /*Making the height of the images stay at its maximum, it changes when the screen does*/
+	max-width: 100%; /*Width of the images chnages in accordance to the height as the screen size changes*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Footer*/
+.footer {
+	background-color: #5E7138;
+	margin: 0.4px;
+	padding: 20px;
+	color: white;
+  margin-bottom: 40px;
+}
+
+/*Making the heading in the footer white*/
+.footer h5 {
+	color: white;
+	font-weight: bold;
+}
+
+/*Making the email a different colour for it to stand out*/
+#email {
+	color: white;
+	font-weight: bold;
+}
+
+/*Making the social media links further apart*/
+.icons {
+	margin-right: 30px;
+}
+
+/*Making the background go behind the container*/
+.container-fluid {
+	position: absolute;
+	z-index: 0;
+}
+
+/*Making the links stack on top of each other if the screen size is small*/
+@media screen and (max-width: 750px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center; 
+    font-size: 14pt;
+  }
+  .navbar {
+    position: static;
+  }
+
+  #blurb {
+    width: 90%;
+  }
+}

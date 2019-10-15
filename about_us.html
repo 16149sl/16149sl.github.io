@@ -1,0 +1,133 @@
+<!doctype html>
+<!-- Specifying the language -->
+ <html lang="en">
+
+<head>
+  <title>About Us</title>
+  <meta charset="utf-8"> 
+  <!-- Information about the webpage -->
+  <meta name="keywords" content="Informing the user of the website">
+  <meta name="description" content="Information, purpose, actions">
+  <!-- Gives browsers instructions on dimensions and scaling of webpages -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS - Bootsrap 4 external library-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Link to CSS stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Linking for fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Acme|Gudea|Josefin+Sans|Neucha|Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<!-- Where all of the content is -->
+<body>
+
+<!-- Main content -->
+<div class="container-fluid">
+
+ <!-- Nav bar -->
+ <div class="navbar">
+  <a href="index.html"><img id="logo" src="images/home/logo.png" alt="Do It Write Logo" title="Do It Write Logo"></a>
+  <a href="index.html">Home</a> 
+  <a href="about_us.html">About Us</a> 
+  <a href="####" onclick="document.getElementById('id01').style.display='block'">Login</a>
+  <a href="####" onclick="document.getElementById('id02').style.display='block'">Sign Up</a>
+</div> <!-- CLosing div for nav bar -->
+
+<h2>About Us</h2>
+<img src="images/about_us/notes.png" alt="Image of a laptop with a planner and diary" id="notes">
+<div id="about">
+  <p>Do It Write is determined to make your life easier. We strive to ease your stress and the feeling of being overwhelmed. The purpose of our website is to help anyone and everyone achieve their full potential, and not get caught up in stress. Our aim to help people relax by providing them with a platform to manage stress. Here, you can quickly jot down your tasks and/or ideas. We give you a means to detress by being able to explicitly write down all tasks. Do It Write has trackers to help you identify how much progress you have made, and what still needs to be done.</p> 
+  <p>Simultaneously, we provide you with the motivation to complete your work. We are a perfect mix of dedication and relaxation. If you need to feel inspired, simply navigate our website and you will come across multiple messages. If you need to relax, jot down your tasks to alleviate the stress by having everything you need to do right in front of you.</p>
+  <p>Do It Write is dedicated to helping you reach your full potential, while also assisting you in calming down. We all know that life can get hectic, but at Do It Write, we provide you with resources to sort through the chaos.</p>
+  <p>Here at Do it Write we are determined to combat something that takes over all our everyday lives; stress. Our aim is to help you be a better you and the way we do that is by providing a simple way for users to list their tasks. We understand that things pile up and it’s hard to keep track of what needs to be done. What's the best way to keep track of tasks? A to do list! However, it’s hard to remember that sticky note left at the bottom of your bag but with Do It Write we follow you everywhere. That’s right you take us on your phone, laptop or tablet. This way you’ll never forget what needs to be done and be one step closer to ticking everything off your list.</p>
+  <p>We have all become victim from the mountain of tasks piling up. That’s why we want to help as many people as we can to overcome this and start to get things done. Here at do it write your success is our motivation.</p>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container1">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+    </div>
+
+    <div class="container2">
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+        
+      <button type="submit" href="main.html" formaction="main.html">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  </form>
+</div><!-- Closing div for the login pop up-->
+
+<div id="id02" class="modal">
+
+  <form class="modal-content" action="/action_page.php">
+  <div class="container1">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+    </div>
+
+    <div class="container2">
+      <label for="firstname"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="firstname" required><br><br>
+      
+      <label for="lastname"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" name="lastname" required><br><br>
+      
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <button type="submit" class="signupbtn" formaction="main.html">Sign Up</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  </form>
+</div><!-- Closing div for the sign up pop up -->
+
+<!-- Footer -->
+<div class="row footer">
+
+  <!-- Making the footer into 3 columns -->
+  <div class="col-sm-4 col-lg-4">
+    <div id="social">
+    <h5>Stay Connected</h5><br>
+      <!-- Adding icons that lead to the relevant social media pages -->
+      <a href="https://www.facebook.com/" target="blank" class="icons"><img src="images/footer/facebook.png" alt="Facebook Icon"></a>
+      <a href="https://www.instagram.com/" target="blank" class="icons"><img src="images/footer/instagram.png" alt="Instagram Icon"></a>
+      <a href="https://www.twitter.com/" target="blank"><img src="images/footer/twitter.png" alt="Twitter Icon"></a>
+    </div>
+  </div> <!-- Closing div for the icons column -->
+
+  <!-- Making the footer into 3 columns -->
+  <div class="col-sm-4 col-lg-4">
+     <!-- Adding information about the website -->
+     <h5>Our mission</h5>
+     Do It Write strives to promote healthy ways to relieve stress while simultaneously providing motivation to complete them. We aspire to be a stable and comforting resource.<br>Let us know how we can achieve this further.<br>Contact us at: <div id="email">doitwrite@gmail.com</div>
+  </div> <!-- Closing div for the information about the website -->
+
+  <!-- Making the footer into 3 columns -->
+  <div class="col-sm-4 col-lg-4 2">
+      <!-- Adding logo for a link to the home page -->
+      <a href="index.html"><img src="images/footer/logo.png" alt="Do It Write logo" id="footerlogo"></a>
+  </div> <!-- Closing div for the logo -->
+</div> <!-- Closing div for footer row -->
+
+</div>
+</body>
