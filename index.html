@@ -1,0 +1,147 @@
+<!doctype html>
+<!-- Specifying the language -->
+ <html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8"> 
+  <!-- Information about the webpage -->
+  <meta name="keywords" content="Introduction to the website">
+  <meta name="description" content="Background image, introduction, home">
+  <!-- Gives browsers instructions on dimensions and scaling of webpages -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Latest compiled and minified CSS - Bootsrap 4 external library-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Link to CSS stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Linking for fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Acme|Gudea|Josefin+Sans|Neucha|Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<!-- Where all of the content is -->
+<body>
+
+<!-- Adding the background image -->
+<style>
+  html { 
+  /*Making the background colour white in case the image does not work*/
+  background-color: #FFFFFF;
+  background: url(images/home/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+
+<!-- Main content -->
+<div class="container-fluid">
+
+<!-- Nav bar -->
+ <div class="navbar">
+  <a href="index.html"><img id="logo" src="images/home/logo.png" alt="Do It Write Logo" title="Do It Write Logo"></a>
+  <a href="index.html">Home</a> 
+  <a href="about_us.html">About Us</a> 
+  <a href="####" onclick="document.getElementById('id01').style.display='block'">Login</a>
+  <a href="####" onclick="document.getElementById('id02').style.display='block'">Sign Up</a>
+</div> <!-- CLosing div for nav bar -->
+	
+<div id="blurb">
+	<p class="largeheadings">Is stress getting you down? Are your tasks piling up?</p>
+	<P>Here at <i>Do it Write</i> we are all about helping you to be the best you can be. Sometimes you just need a little push. That’s why we provide an easy and simple way to keep track of all the tasks you need to complete.</P> 
+	<p class="largeheadings">Do it once, <i>Do it Write!</i></p>
+</div>
+
+<!-- Login button -->
+<button class="popupbtn" onclick="document.getElementById('id01').style.display='block'">Login</button><br>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container1">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+    </div>
+
+    <div class="container2">
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+        
+      <button type="submit" formaction="main.html">Login</button>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  </form>
+</div><!-- Closing div for the login pop up-->
+
+<!-- Sign up button -->
+<button class="popupbtn" onclick="document.getElementById('id02').style.display='block'">Sign Up</button><br><br><br>
+
+<div id="id02" class="modal">
+
+  <form class="modal-content" action="/action_page.php">
+  <div class="container1">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times;</span>
+    </div>
+
+    <div class="container2">
+      <label for="firstname"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="firstname" required><br><br>
+      
+      <label for="lastname"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" name="lastname" required><br><br>
+      
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <button type="submit" class="signupbtn" formaction="main.html">Sign Up</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  </form>
+</div><!-- Closing div for the sign up pop up -->
+
+<!-- Footer -->
+<div class="row footer">
+
+  <!-- Making the footer into 3 columns -->
+  <div class="col-sm-4 col-lg-4">
+    <h5>Stay Connected</h5><br>
+      <!-- Adding icons that lead to the relevant social media pages -->
+      <a href="https://www.facebook.com/" target="blank" class="icons"><img src="images/footer/facebook.png" alt="Facebook Icon"></a>
+      <a href="https://www.instagram.com/" target="blank" class="icons"><img src="images/footer/instagram.png" alt="Instagram Icon"></a>
+      <a href="https://www.twitter.com/" target="blank"><img src="images/footer/twitter.png" alt="Twitter Icon"></a>
+  </div> <!-- Closing div for the icons column -->
+
+  <!-- Making the footer into 3 columns -->
+  <div class="col-sm-4 col-lg-4">
+     <!-- Adding information about the website -->
+     <h5>Our mission</h5>
+     Do It Write strives to promote healthy ways to relieve stress while simultaneously providing motivation to complete them. We aspire to be a stable and comforting resource.<br>Let us know how we can achieve this further.<br>Contact us at: <div id="email">doitwrite@gmail.com</div>
+  </div> <!-- Closing div for the information about the website -->
+
+  <!-- Making the footer into 3 columns -->
+  <div class="col-sm-4 col-lg-4 2">
+      <!-- Adding logo for a link to the home page -->
+      <a href="index.html"><img src="images/footer/logo.png" alt="Do It Write logo" id="footerlogo"></a>
+  </div> <!-- Closing div for the logo -->
+</div> <!-- Closing div for footer row -->
+
+</div>
+</body>
+</html>
